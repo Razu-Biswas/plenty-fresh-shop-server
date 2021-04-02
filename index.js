@@ -33,7 +33,6 @@ client.connect(err => {
   console.log('Database connected success')
   // perform actions on the collection object
 
-
   app.get('/product', (req, res) => {
 		productCollection.find().toArray((err, items) => {
 			res.send(items);
